@@ -2,13 +2,13 @@
 #author Petr Samoletov <samoletovp@gmail.com>
 #brief 20. Ввести строку и букву, вывести только слова, заканчивающиеся на заданную букву.
 
-inputstring = input("Enter words with spaces: ")
-inputletter = input("Enter one letter: ")
-while len(inputletter) > 1:
-    inputletter = input("You need to enter one letter: ")
+input_string = input("Enter words with spaces: ")
+input_letter = input("Enter one letter: ")
+while len(input_letter) > 1:
+    input_letter = input("You need to enter one letter: ")
 words = []
-inputstring = inputstring.split()
-for i in range(len(inputstring)):
-    if inputstring[i][-1] == inputletter:
-        words.append(inputstring[i])
+input_string = input_string.split()
+for i in range(len(input_string)):
+    if input_string[i][-1] == input_letter:
+        words.append(input_string[i])
 print(" ".join(words))
